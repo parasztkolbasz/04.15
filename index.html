@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <label for="fileInput">Képek feltöltése:</label>
+    <input type="file" id="fileInput" accept="*.png" multiple onchange="kepekFeltoltese()">
+
+    <div id="settings">
+        <label for="just">Align-Content:</label>
+
+        <select id="align_content" onchange="stilusValtas()">
+            <option value=""></option>
+            <option value="center">Center</option>
+            <option value="flex-end">Flex-end</option>
+            <option value="flex-start">Flex-start</option>
+            <option value="normal">Normal</option>
+            <option value="space-between">Space-between</option>
+            <option value="space-around">Space-around</option>
+        </select>
+
+        <label for="align">Align-items:</label>
+
+        <select id="align_items" onchange="stilusValtas()" name="align_item">
+            <option value="Baseline">Baseline</option>
+            <option value="Center">Center</option>
+            <option value="End">End</option>
+            <option value="Flex-end">Flex-end</option>
+            <option value="Flex-start">Flex-start</option>
+            <option value="Stretch">Stretch</option>
+        </select>
+
+
+
+
+
+        <label for="size">Kép méret</label>
+        <input type="range"  id="meretValaszto" onchange="meretValtas()" min="50" max="235" value="220">
+    </div>
+    <div id="kepekContainer">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

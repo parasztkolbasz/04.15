@@ -1,0 +1,47 @@
+body{
+    background-color: peachpuff;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#settings{
+    display: flex;
+    background-color: wheat;
+    box-shadow: 4px 4px 7px black;
+    font-size: 2rem;
+    padding: 15px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+img{
+    width: 220px;
+    box-shadow: 4px 4px 16px black;
+}
+
+
+.elmosott{
+    filter: blur(5px);
+}
+
+.forgatott{
+    transform: rotate(180deg);
+}
+
+.animalt{
+    animation: forditas 1s infinite;
+}
+@keyframes forditas {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
